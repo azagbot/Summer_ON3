@@ -1,0 +1,26 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.datetimepicker">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity
+            android:name=".DateTime"
+            android:theme="android:Theme.Holo.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+            android:name=".DateTimePicker"
+            android:theme="android:Theme.Holo.Light"/>
+        <activity
+            android:name=".SimpleDateTimePicker"
+            android:theme="android:Theme.Holo.Light"/>
+
+
+    </application>
+
+</manifest>

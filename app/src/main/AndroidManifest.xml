@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.usuario.summer_on">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_summer"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MarcarHorario"
+            android:icon="@mipmap/ic_launcher_summer"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Configuracoes"
+            android:label="Configurações"
+            android:parentActivityName=".MarcarHorario">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MarcarHorario" />
+        </activity>
+        <activity
+            android:name=".QuemSomos"
+            android:icon="@mipmap/ic_launcher_summer"
+            android:label="Summer_ON"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Promocoes"
+            android:icon="@mipmap/ic_launcher_summer"
+            android:label="Summer_ON"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Marcando"
+            android:icon="@mipmap/ic_launcher_summer"
+            android:label="Summer_ON"
+            android:theme="@style/AppTheme.NoActionBar">
+            android:parentActivityName=".MarcarHorario" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MarcarHorario" />
+        </activity>
+        <activity
+            android:name=".DataEHora"
+            android:label="Summer_ON"
+            android:parentActivityName=".Marcando"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Marcando" />
+        </activity>
+        <activity
+            android:name=".DataEHoraMassagem"
+            android:label="@string/title_activity_data_ehora_massagem"
+            android:theme="@style/AppTheme.NoActionBar">
+            android:parentActivityName=".Marcando" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Marcando" />
+        </activity>
+        <!--
+     ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".DataEHoraa"
+            android:label="Summer_ON"
+            android:parentActivityName=".Marcando"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.usuario.summer_on.Marcando" />
+        </activity>
+    </application>
+
+</manifest>

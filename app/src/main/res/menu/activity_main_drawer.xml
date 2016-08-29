@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_marcar"
+            android:icon="@android:drawable/ic_menu_set_as"
+            android:title="Marcar horário" />
+        <item
+            android:id="@+id/nav_agenda"
+            android:icon="@android:drawable/ic_menu_agenda"
+            android:title="Seus agendamentos" />
+        <item
+            android:id="@+id/nav_promocoes"
+            android:icon="@android:drawable/star_off"
+            android:title="Promoções" />
+        <item
+            android:id="@+id/nav_sobre"
+            android:icon="@android:drawable/ic_menu_info_details"
+            android:title="Quem somos" />
+    </group>
+
+    <item
+        android:title="Mais">
+
+            <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@android:drawable/ic_menu_manage"
+                android:title="Configurações" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@android:drawable/ic_menu_share"
+                android:title="Compartilhe o app"/>
+            </menu>
+
+    </item>
+
+</menu>
